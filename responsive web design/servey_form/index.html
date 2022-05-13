@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<!-- I am writing this in vs code. I have disable all intellisense for the purposes of learning. I am also using github, this project is available here:  https://github.com/projectsofgjt/freecodecamp_my_solutions/tree/main/responsive%20web%20design/servey_form-->
+<!-- I am writing this in vs code. I have disable all intellisense for the purposes of learning. 
+    I am also using github, this project is available here:  https://github.com/projectsofgjt/freecodecamp_my_solutions/tree/main/responsive%20web%20design/servey_form-->
 <html>
-  <head></head>
+  <head>
+    <title id="title">Working title</title>
+    <meta charset="utf-8"/>
+    <met name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+  </head>
   <body>
-    <h1 id="title">Working title</h1>
-    <p id="description">this is a short description</p>
+    <div>
+        <h1>Working header</h1>
+        <p id="description">this is a short description</p>
+    </div>
     <form id="survey-form">
-        <div>
+        <div class="fields">
             <fieldset name="standard-inputs">
-                <label id="name-label">Enter your name: <input required id="name" type="text" placeholder="your name"></label>
-                <label id="email-label">Enter your email: <input required id="email" type="email" placeholder="your email"></label>
-                <label id="number-label">Enter the air speed velocity of an unladen swallow (10-100): <input id="number" type="number" min="10" max="100" placeholder="your number"></label>
+                <label class="top" id="name-label">Enter your name: <input required id="name" type="text" placeholder="your name"></label>
+                <label class="top" id="email-label">Enter your email: <input required id="email" type="email" placeholder="your email"></label>
+                <label class="top" id="number-label">Enter the air speed velocity of an unladen swallow (10-100): <input id="number" type="number" min="10" max="100" placeholder="your number"></label>
             </fieldset>
             <fieldset name="dropdown">
-                <label>what is you favorite color? <select id="dropdown">
+                <label>What is you favorite color? <select id="dropdown">
                     <option>(choose wisely)</option>
                     <option>red</option>
                     <option>blue</option>
@@ -34,6 +42,8 @@
                 <label>checkboc 1: <input type="checkbox" value="3"></label>
                 <label>checkboc 1: <input type="checkbox" value="4"></label>
             </fieldset>
+        </div>
+        <div>
             <label name="comments">Please leave a comment: <textarea></textarea></label>
             <input id="submit" type="submit" name="submit">
         </div>

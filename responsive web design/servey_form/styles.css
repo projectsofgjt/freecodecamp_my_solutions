@@ -5,10 +5,9 @@ body{
 }
 
 fieldset{
-    width: 100%;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
-    padding: auto; 
+    padding: auto;
 }
 
 div{
@@ -28,8 +27,21 @@ p{
 
 .top{
     display: block;
+    margin: 12px auto;
 }
 
 .fields{
     width:fit-content;
+    background-color: #272727c2;
+}
+
+.content{
+    width: fit-content;
+    background-color: #000000de;
+    padding: 1px 2% 1px 2%;
+}
+
+.checkboxes{
+    width: fit-content;
+    display: center;
 }

@@ -9,44 +9,50 @@
     <link href="styles.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <div>
-        <h1>Working header</h1>
-        <p id="description">this is a short description</p>
-    </div>
-    <form id="survey-form">
-        <div class="fields">
-            <fieldset name="standard-inputs">
-                <label class="top" id="name-label">Enter your name: <input required id="name" type="text" placeholder="your name"></label>
-                <label class="top" id="email-label">Enter your email: <input required id="email" type="email" placeholder="your email"></label>
-                <label class="top" id="number-label">Enter the air speed velocity of an unladen swallow (10-100): <input id="number" type="number" min="10" max="100" placeholder="your number"></label>
-            </fieldset>
-            <fieldset name="dropdown">
-                <label>What is you favorite color? <select id="dropdown">
-                    <option>(choose wisely)</option>
-                    <option>red</option>
-                    <option>blue</option>
-                    <option>yellow</option>
-                    <option>green</option>
-                    <option>black</option>
-                    <option>white</option>
-                </select></label>
-            </fieldset>
-            <fieldset name="radio-buttons">
-                <h3>Do you get the reference?</h3>
-                <label>yes <input type="radio" name="myRadios" value="1"> </label>
-                <label>no: <input type="radio" name="myRadios" value="2"> </label>
-            </fieldset>
-            <fieldset name="checkboxes">
-                <label>checkboc 1: <input type="checkbox" value="1"></label>
-                <label>checkboc 1: <input type="checkbox" value="2"></label>
-                <label>checkboc 1: <input type="checkbox" value="3"></label>
-                <label>checkboc 1: <input type="checkbox" value="4"></label>
-            </fieldset>
-        </div>
+    <div class="content">
         <div>
-            <label name="comments">Please leave a comment: <textarea></textarea></label>
-            <input id="submit" type="submit" name="submit">
+            <h1>The survey form which must not be named</h1>
+            <p id="description">I started by making sure I passed all the tests. I then added some style and content.</p>
         </div>
-    </form>
+        <form id="survey-form">
+            <div class="fields">
+                <fieldset name="standard-inputs">
+                    <label class="top" id="name-label">Enter your name: <input required id="name" type="text" placeholder="your name"></label>
+                    <label class="top" id="email-label">Enter your email: <input required id="email" type="email" placeholder="your email"></label>
+                    <label class="top" id="number-label">Enter the air speed velocity of an unladen swallow (10-100): <input id="number" type="number" min="10" max="100" placeholder="your number"></label>
+                    <label>What is you favorite color? <select id="dropdown">
+                        <option>(choose wisely)</option>
+                        <option>red</option>
+                        <option>blue</option>
+                        <option>yellow</option>
+                        <option>green</option>
+                        <option>black</option>
+                        <option>white</option>
+                    </select></label>
+                </fieldset>
+                <fieldset name="radio-buttons">
+                    <p>Do you get the reference?</p>
+                    <label>yes <input type="radio" name="myRadios" value="1"> </label>
+                    <label>no: <input type="radio" name="myRadios" value="2"> </label>
+                </fieldset>
+                <fieldset name="checkboxes">
+                    <div  class="checkboxes">
+                        <p>What have you seen?</p>
+                        <label>Stargate <input type="checkbox" value="1"></label>
+                        <label>Battle Star Galatica <input type="checkbox" value="2"></label>
+                        <label>Star wars <input type="checkbox" value="3"></label>
+                        <label>Star trek <input type="checkbox" value="4"></label>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <input id="submit" type="submit" name="submit">
+                <label class="top" name="comments">Please leave a comment: 
+                    <textarea id="textarea" rows="6" cols="40" placeholder="Enter text here"></textarea>
+                </label>
+                
+            </div>
+        </form>
+    </div>
   </body>
 </html>

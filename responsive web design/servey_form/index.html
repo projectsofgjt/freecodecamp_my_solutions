@@ -5,27 +5,32 @@
   <body>
     <h1 id="title">Working title</h1>
     <p id="description">this is a short description</p>
-    <form id="survey-fom">
-        <fieldset name="standard-inputs">
-            <label id="name-label">Enter your name: <input required id="name" type="text"></label>
-            <label id="email-label">Enter your email: <input required id="email" type="email"></label>
-            <label id="number-label">Enter your number (10-100): <input id="number" type="number" min="10" max="100"></label>
-        </fieldset>
-        <fieldset name="dropdown">
-            <label>Select your choice: <select id="dropdown"></select></label>
-        </fieldset>
-        <fieldset name="radio-buttons">
-            <label>radio 1: <input type="radio" name="myRadios"> </label>
-            <label>radio 2: <input type="radio" name="myRadios"> </label>
-        </fieldset>
-        <fieldset name="checkboxes">
-            <label>checkboc 1: <input type="checkbox" value="1"></label>
-            <label>checkboc 1: <input type="checkbox" value="2"></label>
-            <label>checkboc 1: <input type="checkbox" value="3"></label>
-            <label>checkboc 1: <input type="checkbox" value="4"></label>
-        </fieldset>
-        <label name="comments">Please leave a comment: <textarea></textarea></label>
-        <input type="submit" name="submit">
+    <form id="survey-form">
+        <div>
+            <fieldset name="standard-inputs">
+                <label id="name-label">Enter your name: <input required id="name" type="text" placeholder="your name"></label>
+                <label id="email-label">Enter your email: <input required id="email" type="email" placeholder="your email"></label>
+                <label id="number-label">Enter your number (10-100): <input id="number" type="number" min="10" max="100" placeholder="your number"></label>
+            </fieldset>
+            <fieldset name="dropdown">
+                <label>Select your choice: <select id="dropdown">
+                    <option>Thing 1</option>
+                    <option>Thing 2</option>
+                </select></label>
+            </fieldset>
+            <fieldset name="radio-buttons">
+                <label>radio 1: <input type="radio" name="myRadios"> </label>
+                <label>radio 2: <input type="radio" name="myRadios"> </label>
+            </fieldset>
+            <fieldset name="checkboxes">
+                <label>checkboc 1: <input type="checkbox" value="1"></label>
+                <label>checkboc 1: <input type="checkbox" value="2"></label>
+                <label>checkboc 1: <input type="checkbox" value="3"></label>
+                <label>checkboc 1: <input type="checkbox" value="4"></label>
+            </fieldset>
+            <label name="comments">Please leave a comment: <textarea></textarea></label>
+            <input type="submit" name="submit">
+        </div>
     </form>
   </body>
 </html>

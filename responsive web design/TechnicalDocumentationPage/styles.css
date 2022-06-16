@@ -10,7 +10,9 @@
     color: #f5f6f7;
     top: 0px;
     left: 0px;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: .6rem;
 }
 
 #main-doc{
@@ -24,6 +26,10 @@ section{
     margin-bottom: 2.5rem;
 }
 
+a{
+    color: #d0d0d5;
+}
+
 html{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #2a2a40;
@@ -33,6 +39,9 @@ html{
 
 p{
     font-family: 'Lato';
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 h1, h2{
@@ -42,6 +51,18 @@ h1, h2{
 header{
     display: block;
     font-size: 2rem;
+}
+
+.nav-link{
+    display: block;
+    color: #f5f6f7;
+    text-align: left;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    text-decoration: none;
+    line-height: 2rem;
+    border-top: 2px solid #f5f6f7;
+    margin: 5px 5px 0 0;
 }
 
 #nav-head{
@@ -61,16 +82,28 @@ header{
         background-color: #1b1b32;
         color: #f5f6f7;
         margin: -5px -2px 0 0;
-        overflow: scroll;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
+
     #nav-head{
         text-align: center;
         font-size: 1rem;
     }
+
     #main-doc{
         position: static;
-        /* left: 0px;
-        top: ; */
         margin: 2rem 0 0 0;
+    }
+
+    .nav-link{
+        display: inline;
+        color: #f5f6f7;
+        text-align: left;
+        font-size: 1rem;
+        text-decoration: none;
+        line-height: 2rem;
+        border: none;
+        margin: 0;
     }
 }

@@ -10,6 +10,7 @@
     color: #f5f6f7;
     top: 0px;
     left: 0px;
+    overflow: scroll;
 }
 
 #main-doc{
@@ -19,6 +20,7 @@
 }
 
 section{
+    display: block;
     margin-bottom: 2.5rem;
 }
 
@@ -42,9 +44,33 @@ header{
     font-size: 2rem;
 }
 
-@media (min-width:716px) AND (max-width: 1102px){
-    section{
-        background-color: black;
-        width: 50px;
+#nav-head{
+    font-size: 1.6rem;
+}
+
+@media (max-width: 716px){
+    #navbar{
+        position: static;
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        height: fit-content;
+        max-height: 2.5rem;
+        border-right: solid;
+        border-color: #f5f6f7;
+        background-color: #1b1b32;
+        color: #f5f6f7;
+        margin: -5px -2px 0 0;
+        overflow: scroll;
+    }
+    #nav-head{
+        text-align: center;
+        font-size: 1rem;
+    }
+    #main-doc{
+        position: static;
+        /* left: 0px;
+        top: ; */
+        margin: 2rem 0 0 0;
     }
 }

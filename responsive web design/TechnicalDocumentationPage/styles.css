@@ -1,0 +1,6 @@
+@media (min-width:716px) AND (max-width: 1102px){
+    section{
+        background-color: black;
+        width: 50px;
+    }
+}

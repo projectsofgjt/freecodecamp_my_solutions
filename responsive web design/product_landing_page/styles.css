@@ -16,6 +16,11 @@ header{
     color: #f5f6f7;
 }
 
+a{
+    color: #d0d0d5;
+    text-decoration: none;
+}
+
 div{
     display: block;
 }
@@ -24,4 +29,10 @@ form{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+#after-head{
+    position: absolute;
+    top: 15%;
+    left: 0;
 }

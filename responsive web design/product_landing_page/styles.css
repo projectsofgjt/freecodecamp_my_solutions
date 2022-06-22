@@ -2,8 +2,22 @@
     border: 2px solid black;
 }
 
-#nav-bar{
+header{
     position:fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    max-height: 15%;
+    top: 0;
+    left: 0;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+}
+
+div{
+    display: block;
 }
 
 form{

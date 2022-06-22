@@ -10,16 +10,17 @@
         <header id="header">
             <img id="header-img">
             <nav id="nav-bar">
-                <a id="nav-link"></a>
-                <a id="nav-link"></a>
-                <a id="nav-link"></a>
+                <a class="nav-link"></a>
+                <a class="nav-link"></a>
+                <a class="nav-link"></a>
             </nav>
         </header>
-        <iframe width="420" height="315"
-        src="https://www.youtube.com/watch?v=IEnXoKAvHmw?controls=1">
+        <!-- The following iframe is coppied directly from YouTube->share->embed. I made the video. -->
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/IEnXoKAvHmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </iframe>
-        <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
-        </iframe>
-        <form></form>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" name="email" type="email" placeholder="Enter Email">
+            <input id="submit" type="submit">
+        </form>
     </body>
 </html>

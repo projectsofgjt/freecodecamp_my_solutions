@@ -33,6 +33,21 @@ form{
     flex-wrap: wrap;
 }
 
+@media (max-width: 640px){
+    .nav-link{
+        display: inline;
+        font-family: Helvetica;
+        color: #f5f6f7;
+        text-align: left;
+        font-size: 0.5rem;
+        text-decoration: none;
+        line-height: 2rem;
+        border: none;
+        margin: 0;
+        padding-left: 3rem;
+    }
+}
+
 .nav-link{
     display: inline;
     font-family: Helvetica;

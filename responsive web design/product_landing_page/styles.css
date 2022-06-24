@@ -1,5 +1,5 @@
 *{
-    border: 2px solid black;
+    
 }
 
 html{
@@ -19,6 +19,7 @@ header{
     max-height: 15%;
     top: 0;
     left: 0;
+    z-index: 3;
     background-color: #1b1b32;
     color: #f5f6f7;
 }
@@ -28,9 +29,17 @@ div{
 }
 
 form{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: block;
+}
+
+input{
+    display: block;
+    margin: 0 auto;
+}
+
+section{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
 }
 
 @media (max-width: 640px){
@@ -48,6 +57,19 @@ form{
     }
 }
 
+.info{
+    padding: 0 15%;
+    margin: 2% auto;
+}
+
+.info-head{
+    font-size: 2rem;
+}
+
+.info-dump{
+    font-size: 1.6rem;
+}
+
 .nav-link{
     display: inline;
     font-family: Helvetica;
@@ -61,8 +83,58 @@ form{
     padding-left: 3rem;
 }
 
+.item{
+    display: inline-block;
+    font-family: Helvetica;
+    color: #f5f6f7;
+    text-align: center;
+    text-decoration: none;
+    margin: 5rem;
+    border: 2px solid whitesmoke;
+    width: fit-content;
+}
+
+.item-amount{
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #1b1b32;
+}
+
+.item-desc{
+    font-size: 1.6rem;
+    padding: 0.5rem;
+}
+
+.item-price{
+    font-size: 2rem;
+}
+
 #after-head{
     position: absolute;
     top: 15%;
     left: 0;
+}
+
+#pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+#movie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#email-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#email-head{
+    font-size: 2rem;
 }

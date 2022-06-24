@@ -9,6 +9,12 @@ html{
     font-size: 10px;
 }
 
+img{
+    display: inline-block;
+    box-sizing: border-box;
+    max-height: 15%;
+}
+
 header{
     position:fixed;
     display: flex;
@@ -42,9 +48,24 @@ section{
     margin-bottom: 8rem;
 }
 
-@media (max-width: 640px){
+@media (max-width: 1000px){
+    header{
+        position:fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        max-height: 15%;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        background-color: #1b1b32;
+        color: #f5f6f7;
+        overflow-y: scroll;
+    }
     .nav-link{
-        display: inline;
+        display: inline-block;
         font-family: Helvetica;
         color: #f5f6f7;
         text-align: left;

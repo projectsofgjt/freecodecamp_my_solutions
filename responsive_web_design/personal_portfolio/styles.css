@@ -49,8 +49,14 @@ body::-webkit-scrollbar-thumb{
 }
 
 #projects{
-    background-color: var(--primary-tertiary);
-    width: 100vw;
+    box-sizing: border-box;
+    background-image: linear-gradient( var(--primary-color), var(--primary-compliment) 2%, var(--primary-tertiary ) , var(--primary-compliment) 97%, var(--primary-color)) ;
+    background-color: var(--primary-compliment);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-frame{

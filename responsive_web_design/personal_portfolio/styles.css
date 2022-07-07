@@ -28,12 +28,15 @@ html{
     box-sizing: border-box;
     font-size: 10px;
     scroll-behavior: smooth;
+    margin: 0;
 }
 
 
 body{
     color: var(--text-primary);
     background-color: var(--primary-color);
+    padding: 0;
+    margin: 0;
 }
 
 body::-webkit-scrollbar{
@@ -50,9 +53,11 @@ body::-webkit-scrollbar-thumb{
 
 #projects{
     box-sizing: border-box;
-    background-image: linear-gradient( var(--primary-color), var(--primary-compliment) 2%, var(--primary-tertiary ) , var(--primary-compliment) 97%, var(--primary-color)) ;
+    background-image: linear-gradient( var(--primary-color), var(--primary-tertiary) , var(--primary-compliment ) 30%, var(--primary-compliment ) 70%, var(--primary-tertiary) , var(--primary-color)) ;
     background-color: var(--primary-compliment);
     width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,12 +115,13 @@ body::-webkit-scrollbar-thumb{
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-gap: 50px;
     width: 100%;
-    max-width: 1100px;
+    max-width: 80vw;
     margin: 0 auto;
     margin-bottom: 6rem;
 }
 
 #navbar{
+    box-sizing: border-box;
     position:fixed;
     background-color: var(--primary-compliment);
     display: flex;

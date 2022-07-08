@@ -14,21 +14,19 @@
 
 /* Small screens */
 @media only screen and (max-width: 600px){
-    
-}
-
-/* Large screens */
-@media only screen and (min-width: 600px){
-    #navbar{
-        
+    html{
+        font-size: 50%;
+        max-width: 100vw;
     }
 }
+
 
 html{
     box-sizing: border-box;
     font-size: 10px;
     scroll-behavior: smooth;
     margin: 0;
+    text-align: center;
 }
 
 
@@ -57,7 +55,7 @@ body::-webkit-scrollbar-thumb{
     background-color: var(--primary-compliment);
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 8rem 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,7 +204,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .profile:hover .profile-line{
-    margin: 1rem .8rem;
+    margin: 0;
 }
 
 .profile-line{
@@ -219,6 +217,7 @@ body::-webkit-scrollbar-thumb{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     height: 60vh;
     width: 100%;
 }

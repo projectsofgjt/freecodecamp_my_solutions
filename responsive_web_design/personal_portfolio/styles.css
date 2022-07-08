@@ -143,6 +143,7 @@ body::-webkit-scrollbar-thumb{
 
 .nav-item{
     display: list-item;
+    transition: .3s;
 }
 
 .nav-item:first-child{

@@ -204,6 +204,10 @@ body::-webkit-scrollbar-thumb{
     font-size: 2.2rem;
 }
 
+.profile:hover .profile-line{
+    margin: 1rem .8rem;
+}
+
 .profile-line{
     display: inline-block;
     margin: 2rem 2rem;

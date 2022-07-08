@@ -183,3 +183,41 @@ body::-webkit-scrollbar-thumb{
     font-size: 2rem;
     color: var(--text-secondary);
 }
+
+.project{
+    font-size: 2.3rem;
+}
+
+.less{
+    color: var(--text-secondary);
+}
+
+.profile{
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: 0.5s;
+    font-size: 2rem;
+}
+
+.profile:hover{
+    color: var(--text-primary);
+    font-size: 2.2rem;
+}
+
+.profile-line{
+    display: inline-block;
+    margin: 2rem 2rem;
+}
+
+.profile-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+}
+
+a{
+    display: inline-block;
+}
